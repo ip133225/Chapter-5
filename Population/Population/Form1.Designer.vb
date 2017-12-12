@@ -27,11 +27,12 @@ Partial Class Form1
         Me.comboOrganisms = New System.Windows.Forms.ComboBox()
         Me.comboMultiply = New System.Windows.Forms.ComboBox()
         Me.txtBoxIncrease = New System.Windows.Forms.TextBox()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnCalculate
         '
-        Me.btnCalculate.Location = New System.Drawing.Point(41, 207)
+        Me.btnCalculate.Location = New System.Drawing.Point(12, 207)
         Me.btnCalculate.Name = "btnCalculate"
         Me.btnCalculate.Size = New System.Drawing.Size(84, 23)
         Me.btnCalculate.TabIndex = 0
@@ -40,7 +41,7 @@ Partial Class Form1
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(140, 207)
+        Me.btnExit.Location = New System.Drawing.Point(183, 207)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(84, 23)
         Me.btnExit.TabIndex = 1
@@ -70,11 +71,21 @@ Partial Class Form1
         Me.txtBoxIncrease.Size = New System.Drawing.Size(121, 20)
         Me.txtBoxIncrease.TabIndex = 4
         '
+        'btnClear
+        '
+        Me.btnClear.Location = New System.Drawing.Point(102, 207)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(75, 23)
+        Me.btnClear.TabIndex = 5
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.ClientSize = New System.Drawing.Size(274, 262)
+        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.txtBoxIncrease)
         Me.Controls.Add(Me.comboMultiply)
         Me.Controls.Add(Me.comboOrganisms)
@@ -91,5 +102,6 @@ Partial Class Form1
     Friend WithEvents comboOrganisms As System.Windows.Forms.ComboBox
     Friend WithEvents comboMultiply As System.Windows.Forms.ComboBox
     Friend WithEvents txtBoxIncrease As System.Windows.Forms.TextBox
+    Friend WithEvents btnClear As System.Windows.Forms.Button
 
 End Class
